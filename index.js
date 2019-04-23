@@ -12,4 +12,4 @@ massive(CONNECTION_STRING).then(dbInstance => {
 	app.listen(SERVER_PORT, () => console.log(`listening on port ${SERVER_PORT}`))
 }).catch(err => console.log("oopsies!", err))
 
-app.get('/api/products', productCtrl.allProducts);
+app.get('/api/products', productCtrl.getAll);
